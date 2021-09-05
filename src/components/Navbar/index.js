@@ -1,37 +1,45 @@
 import React,{useState} from 'react'
-import { Nav, NavLogo, NavMenuBtn, BurgerBtn, MenuList, NavLoginSection } from './NavbarElements'
+import { Nav, NavLogo, NavMenuBtn, 
+        BurgerBtn, MenuList, NavLoginSection, 
+        HeaderSidebar, ListContainer, 
+        ListElementMenu, BottomSection} from './NavbarElements'
 import logo from '../../assets/img/logov1.png'
 import { HiMenu } from 'react-icons/hi';
 import { BiWorld } from 'react-icons/bi'
 import { FaUserAlt } from 'react-icons/fa'
+import { IoMdCloseCircleOutline } from 'react-icons/io'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
-
-    const [click, setClick] = useState();
+    const [click, setClick] = useState(false);
 
     const menuBtnHandler = ()=>{
-        alert('Helloooooooooooo!');
+        setClick(!click);
     }
-
 
     return (
         <>
             <Nav>
                 <NavMenuBtn>
                     <BurgerBtn onClick={menuBtnHandler}>
-                        <HiMenu/>
+                        {
+                         click ? <IoMdCloseCircleOutline/> : <HiMenu/>
+                        }
                     </BurgerBtn>
                 </NavMenuBtn>
 
                 <NavLogo>
-                    <img src={logo} alt="Logo"/>
+                    <Link to="/">
+                        <img src={logo} alt="Logo"/>
+                    </Link>
                 </NavLogo>
 
                 <div className="space"></div>
 
                 <MenuList>
-                    <a href="/" className="active">Project</a>
-                    <a href="/">Feed</a>
+                    <Link to="/" className="active">Project</Link>
+                    <Link to="/">Feed</Link>
+
                 </MenuList>
 
                 <NavLoginSection>
@@ -46,6 +54,19 @@ const Navbar = () => {
                     </a>
                 </NavLoginSection>
             </Nav>
+
+            <HeaderSidebar display={click}>
+                <ListContainer>
+                    <ListElementMenu to="/">Project</ListElementMenu>
+                    <ListElementMenu>Feed</ListElementMenu>
+                    <BottomSection>
+                        <ListElementMenu>
+                            <FaUserAlt/> Login
+                        </ListElementMenu>
+                    </BottomSection>
+                </ListContainer>
+            </HeaderSidebar>
+
         </>
     )
 }
