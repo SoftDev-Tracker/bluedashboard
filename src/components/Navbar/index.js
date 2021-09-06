@@ -60,7 +60,7 @@ const Navbar = () => {
                     <ListElementMenu to="/">Project</ListElementMenu>
                     <ListElementMenu>Feed</ListElementMenu>
                     <BottomSection>
-                        <LxistElementMenu>
+                        <ListElementMenu>
                             <FaUserAlt/> Login
                         </ListElementMenu>
                     </BottomSection>

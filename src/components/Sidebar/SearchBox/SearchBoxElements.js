@@ -19,13 +19,18 @@ export const SelectFormContainer = styled.div`
     }
 `
 
+export const TitleGroup = styled.div`
+    color: #A0A0A0;
+    font-size: 12px;
+    text-transform: uppercase;
+`
+
+
 export const SelectBox = styled.input.attrs(props=>({
     type: "search",
     placeholder: "Project name..."
-}))`
-    border: none;
+}))`border: none;
     width: 100%;
     &:focus{
         outline: none;
-    }
-`
+    }`

@@ -40,6 +40,7 @@ export const NavLogo = styled.div`
 
     @media only screen and (min-width: 768px){
         margin-left: 1rem;    
+        margin-right: 3rem;
         img{
             margin-left: 0;
         }    
@@ -65,6 +66,7 @@ export const MenuList = styled.div`
 
     a{
         color: ${css.lightLink};
+        margin-right: 2rem;
     }
     .active{
         color: ${css.activeLink};
@@ -100,6 +102,7 @@ export const NavLoginSection = styled.div`
 export const HeaderSidebar = styled.div`
     animation: 0.5s;
     background-color: #e4e4e5;
+    font-weight: 800;
     height: 100vh;
     left: ${ props => props.display ? '0px' : '-300px'};
     position: fixed;
