@@ -123,6 +123,10 @@ export const ListElementMenu = styled(Link)`
     color: #142c5b;
     display: block;
     padding: 10px;
+
+    &:last-child{
+        border-bottom: none;
+    }
 `;
 
 export const BottomSection = styled.div`
