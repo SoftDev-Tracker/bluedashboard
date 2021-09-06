@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
-    background-color: black;
+    background-color: #fff;
+    border-right: 1px solid #CECECE;
     height: 100%;
     left: 0;
     position: fixed;

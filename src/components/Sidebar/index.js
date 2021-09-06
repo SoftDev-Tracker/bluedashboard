@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchBox from './SearchBox'
 import { SidebarContainer, SidebarList } from './SidebarElements'
 
 
@@ -6,8 +7,8 @@ const Sidebar = () => {
     return (
         <>
             <SidebarContainer>
-                <SidebarList>
-
+                <SidebarList>  
+                    <SearchBox/>
                 </SidebarList>
             </SidebarContainer>
         </>
