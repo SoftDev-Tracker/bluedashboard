@@ -1,16 +1,17 @@
 import React from 'react'
-import {PageContainer} from './PageContentElements'
+import {PageContainer, MainSection} from './PageContentElements'
+import { Row } from '../Utils'
+import HeaderSection from './HeaderSection'
 
 const PageContent = () => {
     return (
-        <> 
+        <MainSection> 
             <PageContainer>
-                <h1>Hola d</h1>
-                <h1>Hola</h1>
-                <h1>Hola</h1>
-                <h1>Holaf dddd ffff ff ff</h1>
+                <Row>
+                    <HeaderSection></HeaderSection>
+                </Row>
             </PageContainer>
-        </>
+        </MainSection>
     )
 }
 
