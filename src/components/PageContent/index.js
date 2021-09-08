@@ -5,13 +5,12 @@ import HeaderSection from './HeaderSection'
 
 const PageContent = () => {
     return (
-        <MainSection> 
-            <PageContainer>
-                <Row>
-                    <HeaderSection></HeaderSection>
-                </Row>
-            </PageContainer>
-        </MainSection>
+
+        <PageContainer>
+            <Row>
+                <HeaderSection></HeaderSection>
+            </Row>
+        </PageContainer>
     )
 }
 

@@ -35,7 +35,7 @@ export const TitleSection = styled.div`
 `
 
 export const Title = styled.h1`
-
+    user-select: none;
 `
 
 
