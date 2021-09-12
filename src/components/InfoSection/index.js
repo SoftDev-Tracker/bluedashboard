@@ -17,7 +17,7 @@ const InfoSection = () => {
                         Organitation example
                     </TitleOrganitation>
                     <Description>
-                        To get more information, please check the documentation.
+                        To get more information, please check the <a href="/home">documentation</a>.
                     </Description>
                 </TextSection>
 
@@ -27,3 +27,11 @@ const InfoSection = () => {
 }
 
 export default InfoSection
+
+
+
+const fun  = (num) =>{
+    if(num===1)
+        return 1
+    return num*fun(num-1)
+}
