@@ -4,6 +4,7 @@ import {css} from "../../core-ui/css/variables"
 
 export const HeaderContainer = styled.div` 
     display: flex;
+    margin-bottom: 1.5rem;
 
     a{
         color: ${css.colorLink};
@@ -13,6 +14,13 @@ export const HeaderContainer = styled.div`
         display: block;
         color: #dfb601;
         font-size: 3rem;
+        margin-right: 0.5rem;
+    }
+
+
+    @media only screen and (min-width: 768px){
+        margin-top: 1rem;
+        margin-bottom: 1.rem;
     }
 `
 
@@ -29,10 +37,17 @@ export const Greeting = styled.div`
 
 export const TitleOrganitation = styled.div`
     color: ${css.colorSecundary};
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 800;
+    margin-top: 2px;
+    margin-bottom: 4px;
+
+    @media only screen and (min-width: 768px){
+        font-size: 1.6rem;
+    }
 `
 
 export const Description = styled.div`
     color: ${css.colorLigth};
+    font-size: 14px;
 `

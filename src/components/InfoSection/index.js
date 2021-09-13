@@ -27,11 +27,3 @@ const InfoSection = () => {
 }
 
 export default InfoSection
-
-
-
-const fun  = (num) =>{
-    if(num===1)
-        return 1
-    return num*fun(num-1)
-}
