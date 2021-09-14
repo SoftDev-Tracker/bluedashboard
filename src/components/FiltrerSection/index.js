@@ -3,10 +3,14 @@ import { FiltretSectionContainer, SearchBox, SearchButton,SearchForm, CheckSecti
 
 import {BiSearch} from 'react-icons/bi'
 
-const FiltrerSection = () => {
+const FiltrerSection = ( {setFilterTitle} ) => {
 
     const checkClick = () =>{
         alert("It works!");
+    }
+
+    const searchHandle = (value)=>{
+        setFilterTitle(value)
     }
 
     return (
@@ -16,7 +20,7 @@ const FiltrerSection = () => {
                     <BiSearch/>
                 </SearchButton>
 
-                <SearchForm type="text" placeholder="Search">
+                <SearchForm type="text" placeholder="Search" onChange={(event) => searchHandle(event.target.value)}>
 
                 </SearchForm>
             </SearchBox>
