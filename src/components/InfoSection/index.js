@@ -14,7 +14,7 @@ const InfoSection = () => {
                         Welcome to our new page!
                     </Greeting>
                     <TitleOrganitation>
-                        Organitation example
+                        Organization example
                     </TitleOrganitation>
                     <Description>
                         To get more information, please check the <a href="/home">documentation</a>.

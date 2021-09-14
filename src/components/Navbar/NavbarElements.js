@@ -66,7 +66,7 @@ export const MenuList = styled.div`
 
     a{
         color: ${css.lightLink};
-        margin-right: 2rem;
+        margin-right: 1.4rem;
     }
     .active{
         color: ${css.activeLink};

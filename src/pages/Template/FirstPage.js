@@ -6,6 +6,7 @@ import {ContainerFlex, MainButton, Separator} from '../../core-ui/utils'
 import { Container, MainSection } from '../../components/Utils'
 import HeaderPage from '../../components/HeaderPage'
 import FiltrerSection from '../../components/FiltrerSection'
+import { CardGrid } from '../../components/ProjectCardsSection/Index'
 
 const FirstPage = () => {
     return (
@@ -27,6 +28,8 @@ const FirstPage = () => {
                     </ContainerFlex>
 
                     <FiltrerSection/>
+                    <CardGrid />
+
                 </Container>
             </MainSection>
         

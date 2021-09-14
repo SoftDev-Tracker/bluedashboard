@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const FiltretSectionContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0.5rem;
 `
 
 export const SearchBox = styled.div`
@@ -14,7 +15,6 @@ export const SearchBox = styled.div`
 export const CheckSection = styled.div`
     align-items: center;
     display: flex;
-    margin-top: 1rem;
 `
 
 export const SearchButton = styled.button`

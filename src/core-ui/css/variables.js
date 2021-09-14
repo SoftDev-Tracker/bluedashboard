@@ -10,5 +10,6 @@ export const css = {
     activeLink: '#2A3753',
     colorSecundary: '#2A345D',
     colorLigth: '#727272',
-    colorLink: '#236FFF'
+    colorLink: '#236FFF',
+    colorGray: '#5e5e5e'
 }
