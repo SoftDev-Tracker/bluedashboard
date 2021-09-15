@@ -43,7 +43,7 @@ export const TitleOrganitation = styled.div`
     margin-bottom: 4px;
 
     @media only screen and (min-width: 768px){
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 `
 

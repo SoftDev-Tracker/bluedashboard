@@ -7,7 +7,7 @@ export const FiltretSectionContainer = styled.div`
 `
 
 export const SearchBox = styled.div`
-    border-bottom: 2px solid #a4a4a4;
+    border-bottom: 1px solid #949393;
     display: flex;
     padding: 5px 0;
 `
