@@ -3,7 +3,7 @@ import { Nav, NavLogo, NavMenuBtn,
         BurgerBtn, MenuList, NavLoginSection, 
         HeaderSidebar, ListContainer, 
         ListElementMenu, BottomSection} from './NavbarElements'
-import logo from '../../assets/img/logov1.png'
+import logo from '../../../assets/img/logov1.png'
 import { HiMenu } from 'react-icons/hi';
 import { BiWorld } from 'react-icons/bi'
 import { FaUserAlt } from 'react-icons/fa'

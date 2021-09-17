@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {css} from "../../core-ui/css/variables"
+import {css} from "../../../core-ui/css/variables"
 
 
 export const HeaderContainer = styled.div` 

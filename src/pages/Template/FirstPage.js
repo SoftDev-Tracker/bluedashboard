@@ -1,12 +1,12 @@
 import React,{useState} from 'react'
-import InfoSection from '../../components/InfoSection'
-import Navbar from '../../components/Navbar'
+import InfoSection from '../../components/Content/InfoSection'
+import Navbar from '../../components/Header/Navbar'
 import {ContainerFlex, MainButton, Separator} from '../../core-ui/utils'
 
 import { Container, MainSection } from '../../components/Utils'
-import HeaderPage from '../../components/HeaderPage'
-import FiltrerSection from '../../components/FiltrerSection'
-import { CardGrid } from '../../components/ProjectCardsSection/Index'
+import HeaderPage from '../../components/Content/HeaderPage'
+import FiltrerSection from '../../containers/FiltrerSection'
+import { CardGrid } from '../../containers/ProjectCardsSection/Index'
 
 
 
