@@ -35,7 +35,7 @@ export const CardElement = ({ key, title, description}) => {
     return (
         <Card key={key} className="class">
             <TopSection>
-                <Title> { title ? title : 'Default title' }</Title>
+                <Title to="/"> { title ? title : 'Default title' }</Title>
                 <EditButton>
                     <BsThreeDotsVertical/>
                 </EditButton>
