@@ -8,7 +8,20 @@ import { GoDashboard, GoTasklist, GoBug } from 'react-icons/go';
 import { AiOutlineUser } from 'react-icons/ai'
 import {HiOutlineDocumentReport} from 'react-icons/hi'
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    useParams,
+    useRouteMatch
+  } from "react-router-dom";
+
 const Sidebar = () => {
+    let { url } = useRouteMatch();
+    let { task } = useParams();
+    let { id } = useParams();
+
+
     return (
         <>
             <SidebarContainer>
@@ -19,28 +32,28 @@ const Sidebar = () => {
                         Options
                     </TitleSeparator>
                     <LinkGroup>
-                        <LinkElement className="active">
+                        <LinkElement exact to="/project">
                             <GoDashboard/>
                             <TitleURL>
                                 Dashboard
                             </TitleURL>
                         </LinkElement>
 
-                        <LinkElement>
+                        <LinkElement to="/project/task" >
                             <GoTasklist/>
                             <TitleURL>
                                 Tasks and Backlog
                             </TitleURL>
                         </LinkElement>
 
-                        <LinkElement>
+                        <LinkElement to="/project/bugs">
                             <GoBug/>
                             <TitleURL>
                                 Bugs
                             </TitleURL>
                         </LinkElement>
 
-                        <LinkElement>
+                        <LinkElement to="/project/members">
                             <AiOutlineUser/>
                             <TitleURL>
                                 Members
@@ -52,14 +65,14 @@ const Sidebar = () => {
                         Reports 
                     </TitleSeparator>
                     <LinkGroup>
-                        <LinkElement>
+                        <LinkElement to="/project/srs">
                             <HiOutlineDocumentReport/>
                             <TitleURL>
-                                RSR
+                                SRS
                             </TitleURL>
                         </LinkElement>
 
-                        <LinkElement>
+                        <LinkElement to="/project/psp"> 
                             <HiOutlineDocumentReport/>
                             <TitleURL>
                                 PSP
@@ -69,6 +82,16 @@ const Sidebar = () => {
                     </LinkGroup>
                 </SidebarList>
             </SidebarContainer>
+
+            <Router>
+                <Switch>
+                    <Route path={`${task}/:id`}>
+                        <Sidebar />
+                    </Route>
+                </Switch>
+            </Router>
+
+
         </>
     )
 }

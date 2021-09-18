@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 export const SidebarContainer = styled.div`
@@ -32,7 +32,7 @@ export const TitleSeparator = styled.div`
 export const LinkGroup = styled.div`
 `
 
-export const LinkElement = styled(Link)`
+export const LinkElement = styled(NavLink)`
     align-items: center;
     display: flex;
     font-size: 14px;

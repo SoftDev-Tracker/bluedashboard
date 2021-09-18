@@ -1,5 +1,5 @@
 import React from 'react'
-import {PageContainer, MainSection} from './PageContentElements'
+import {PageContainer} from './PageContentElements'
 import { Row } from '../../Utils'
 import HeaderSection from './HeaderSection'
 
@@ -7,7 +7,6 @@ import HeaderSection from './HeaderSection'
 
 const PageHeaderSeaction = () => {
     return (
-
         <PageContainer>
             <Row>
                 <HeaderSection></HeaderSection>
