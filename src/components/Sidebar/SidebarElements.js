@@ -22,7 +22,7 @@ export const SidebarList = styled.div`
 export const TitleSeparator = styled.div`
     color: #A0A0A0;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 0.6rem 1rem;
     user-select: none; 
@@ -55,6 +55,6 @@ export const LinkElement = styled(Link)`
 
 export const TitleURL = styled.span`
     color: #3f3f3f;
-    font-weight: 800;
+    font-weight: 700;
     padding-left: 1rem;
 `

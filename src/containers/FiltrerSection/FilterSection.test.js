@@ -7,5 +7,4 @@ test('Render test', ()=>{
     const component = render(<FiltrerSection/>)
     component.getByText('Show only active elements')
 
-    
 });

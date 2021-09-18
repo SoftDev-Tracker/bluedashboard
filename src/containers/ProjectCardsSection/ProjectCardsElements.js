@@ -40,7 +40,7 @@ export const TopSection = styled.div`
 
 export const Title = styled(Link)`
     color: ${css.colorSecundary};
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.1rem;
     margin: 0px;
 `

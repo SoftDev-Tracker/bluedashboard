@@ -8,7 +8,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <FirstPage></FirstPage>
+        
+        <AdminPanel></AdminPanel>
       </div>
     </Router>
   );
