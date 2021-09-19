@@ -8,18 +8,9 @@ import { GoDashboard, GoTasklist, GoBug } from 'react-icons/go';
 import { AiOutlineUser } from 'react-icons/ai'
 import {HiOutlineDocumentReport} from 'react-icons/hi'
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    useParams,
-    useRouteMatch
-  } from "react-router-dom";
 
 const Sidebar = () => {
-    let { url } = useRouteMatch();
-    let { task } = useParams();
-    let { id } = useParams();
+
 
 
     return (
@@ -83,13 +74,7 @@ const Sidebar = () => {
                 </SidebarList>
             </SidebarContainer>
 
-            <Router>
-                <Switch>
-                    <Route path={`${task}/:id`}>
-                        <Sidebar />
-                    </Route>
-                </Switch>
-            </Router>
+
 
 
         </>

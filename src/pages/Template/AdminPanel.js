@@ -5,15 +5,15 @@ import { MainSection } from '../../components/Utils'
 import PageHeaderSeaction from '../../components/Content/PageHeaderSection'
 
 const AdminPanel = () => {
+
     return (
         <>
             <Navbar />
             <Sidebar />
-            
+
             <MainSection>
                 <PageHeaderSeaction />
-            </MainSection>
-    
+            </MainSection>        
         </>
     )
 }

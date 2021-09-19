@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState, useContext} from 'react'
 import { Nav, NavLogo, NavMenuBtn, 
         BurgerBtn, MenuList, NavLoginSection, 
         HeaderSidebar, ListContainer, 
@@ -9,9 +9,12 @@ import { BiWorld } from 'react-icons/bi'
 import { FaUserAlt } from 'react-icons/fa'
 import { IoMdCloseCircleOutline } from 'react-icons/io'
 import {Link} from 'react-router-dom'
+import { UserContext } from '../../../context/UserContext';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
+
+    const userContext = useContext(UserContext)
 
     const menuBtnHandler = ()=>{
         setClick(!click);
@@ -50,7 +53,7 @@ const Navbar = () => {
                 </a>
                     <a href="/"> 
                         <FaUserAlt/>
-                        Log-in
+                        {userContext.user.username}
                     </a>
                 </NavLoginSection>
             </Nav>
