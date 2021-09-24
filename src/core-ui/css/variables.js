@@ -11,5 +11,6 @@ export const css = {
     colorSecundary: '#2A345D',
     colorLigth: '#727272',
     colorLink: '#236FFF',
-    colorGray: '#5e5e5e'
+    colorGray: '#5e5e5e',
+    colorInput: '#F2F2F2',
 }

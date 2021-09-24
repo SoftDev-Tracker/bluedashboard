@@ -17,7 +17,7 @@ export const Modal = styled.div`
 
 export const FormContainer = styled.div`
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     position: relative;
     border-radius: 5px;
     overflow: auto;

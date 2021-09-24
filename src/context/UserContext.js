@@ -21,7 +21,7 @@ export const UserContext = createContext()
 export const GlobalProvider = (props)=>{
     return(
         <UserContext.Provider value={global}>
-            { props.children }
+            {props.children }
         </UserContext.Provider>
     )
 }

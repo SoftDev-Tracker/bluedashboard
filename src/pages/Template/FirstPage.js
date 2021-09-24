@@ -11,10 +11,7 @@ import { UserContext } from '../../context/UserContext'
 import TaskForms from '../../containers/TaskForm'
 import { ModalContext } from '../../context/ModalContext'
 
-
-
 const FirstPage = () => {
-
     const {tasks} = useContext(UserContext);
     const {handleShow} = useContext(ModalContext)
 
@@ -23,29 +20,23 @@ const FirstPage = () => {
     return (
         <>
             <Navbar />
-
             <MainSection>
                 <Container>
-                    <InfoSection>
-                    </InfoSection>
+                    <InfoSection></InfoSection>
 
                     <Separator/>
-
+                    
                     <ContainerFlex alignItems="space-between">
                         <HeaderPage/>
                         <MainButton to="/" onClick={()=>handleShow()}>
                             Button
                         </MainButton>
                     </ContainerFlex>
-
                     <FiltrerSection setFilterTitle={setFilterTitle}/>
                     <CardGrid tasks={tasks} titleFilter={filterTitle} />
-
                 </Container>
             </MainSection>
-        
             <TaskForms />
-
         </>
     )
 }

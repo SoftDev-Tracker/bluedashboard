@@ -9,7 +9,6 @@ import {BiCalendar} from 'react-icons/bi'
 import {FaDotCircle} from 'react-icons/fa'
 
 export const CardGrid = ({tasks, titleFilter=""}) =>{
-
     useEffect(()=>{
         const el = document.querySelector('.grid-projects')
         Sortable.create(el, {
@@ -17,7 +16,6 @@ export const CardGrid = ({tasks, titleFilter=""}) =>{
             animation: 150
         })
     })
-
 
     return(
         <Grid className="grid-projects">
