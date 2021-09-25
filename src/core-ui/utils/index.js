@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Separator = styled.div`
     background-color: #dadada;
-    height: 3px;;
+    height: 2px;;
     margin: 1.2rem 0;
     width: 100%;
 `

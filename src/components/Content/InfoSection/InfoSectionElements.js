@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import {css} from "../../core-ui/css/variables"
+import {css} from "../../../core-ui/css/variables"
 
 
 export const HeaderContainer = styled.div` 
     display: flex;
     margin-bottom: 1.5rem;
+    user-select: none;
 
     a{
         color: ${css.colorLink};
@@ -30,20 +31,20 @@ export const TextSection = styled.div`
 
 export const Greeting = styled.div`
     color: ${css.colorLigth};
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: lighter;
     text-transform: uppercase;
 `
 
 export const TitleOrganitation = styled.div`
     color: ${css.colorSecundary};
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 2px;
     margin-bottom: 4px;
 
     @media only screen and (min-width: 768px){
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 `
 

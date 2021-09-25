@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {css} from "../../assets/css/variables"
+import {css} from "../../../core-ui/css/variables"
 import {Link} from 'react-router-dom'
 
 

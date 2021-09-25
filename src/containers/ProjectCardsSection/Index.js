@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import Sortable from 'sortablejs';
+
 
 import { Grid, Card, TopSection, Title, EditButton, Description,
  InfoSection, Section, TitleInfo, DescriptionInfo, StateLabel} from './ProjectCardsElements'
@@ -7,13 +9,20 @@ import {BiCalendar} from 'react-icons/bi'
 import {FaDotCircle} from 'react-icons/fa'
 
 export const CardGrid = ({tasks, titleFilter=""}) =>{
+    useEffect(()=>{
+        const el = document.querySelector('.grid-projects')
+        Sortable.create(el, {
+            swapThreshold: 1,
+            animation: 150
+        })
+    })
 
     return(
-        <Grid>
+        <Grid className="grid-projects">
             { tasks.filter(task=>{
                 return task.title.toLowerCase().indexOf(titleFilter.toLowerCase())>=0;
-            }).map( (task) => {
-                return (<CardElement key={task.key} title={task.title} description={task.description} />)
+            }).map( (task, key) => {
+                return (<CardElement key={key} title={task.title} description={task.description} />)
             }) }
         </Grid>
     );
@@ -22,9 +31,9 @@ export const CardGrid = ({tasks, titleFilter=""}) =>{
 
 export const CardElement = ({ key, title, description}) => {
     return (
-        <Card key={key}>
+        <Card key={key} className="class">
             <TopSection>
-                <Title> { title ? title : 'Default title' }</Title>
+                <Title to="/project"> { title ? title : 'Default title' }</Title>
                 <EditButton>
                     <BsThreeDotsVertical/>
                 </EditButton>

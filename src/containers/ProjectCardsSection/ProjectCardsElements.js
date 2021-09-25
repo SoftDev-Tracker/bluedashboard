@@ -15,7 +15,7 @@ export const Grid = styled.div`
 export const Card = styled.div`
     background-color: #ffffff;
     box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -40,7 +40,7 @@ export const TopSection = styled.div`
 
 export const Title = styled(Link)`
     color: ${css.colorSecundary};
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.1rem;
     margin: 0px;
 `

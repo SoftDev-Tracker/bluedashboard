@@ -1,19 +1,19 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Header/Navbar'
 import Sidebar from '../../components/Sidebar'
 import { MainSection } from '../../components/Utils'
-import PageContent from '../../components/PageContent'
+import PageHeaderSeaction from '../../components/Content/PageHeaderSection'
 
 const AdminPanel = () => {
+
     return (
         <>
             <Navbar />
             <Sidebar />
-            
+
             <MainSection>
-                <PageContent />
-            </MainSection>
-    
+                <PageHeaderSeaction />
+            </MainSection>        
         </>
     )
 }

@@ -1,11 +1,12 @@
 import React from 'react'
-import {PageContainer, MainSection} from './PageContentElements'
-import { Row } from '../Utils'
+import {PageContainer} from './PageContentElements'
+import { Row } from '../../Utils'
 import HeaderSection from './HeaderSection'
 
-const PageContent = () => {
-    return (
 
+
+const PageHeaderSeaction = () => {
+    return (
         <PageContainer>
             <Row>
                 <HeaderSection></HeaderSection>
@@ -14,4 +15,4 @@ const PageContent = () => {
     )
 }
 
-export default PageContent
+export default PageHeaderSeaction
